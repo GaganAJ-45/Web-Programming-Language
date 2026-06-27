@@ -1,6 +1,6 @@
 # HTML & CSS Notes 📚
 
-Personal reference notes for learning HTML & CSS from scratch.
+reference notes for learning HTML & CSS from scratch.
 
 ## 📁 Files
 
