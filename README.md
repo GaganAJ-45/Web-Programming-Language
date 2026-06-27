@@ -18,6 +18,7 @@ reference notes for learning HTML & CSS from scratch.
 ## 🛠️ Tools Used
 - VS Code
 - Live Server Extension
+- Prettier Extension (To automatically adjust thte filees format)
 - Browser (Chrome)
 
 ## 📅 Started
