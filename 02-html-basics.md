@@ -149,3 +149,134 @@ Comments are **not shown** on the webpage — only in the code:
 - In VS Code, type `!` and press **Tab** — full skeleton is auto-generated
 - Save file as `.html` extension
 - Use **Live Server** extension to see changes instantly in browser
+
+---
+
+## VS Code Shortcut — HTML Boilerplate
+
+Type `!` and press **Enter** (or Tab) in VS Code inside a `.html` file:
+
+```
+! → Enter
+```
+
+This instantly gives you the full HTML boilerplate (basic template):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+```
+
+> This is called the **HTML boilerplate** — the starting point for every page.
+
+---
+
+## Character Sets
+
+- Computers don't understand characters — they only understand **binary digits (0s and 1s)**
+- A **character set** maps characters to numbers so computers can store them
+
+### ASCII (American Standard Code for Information Interchange)
+- **First character set** introduced
+- Only for the **English language**
+- Example mappings:
+  - A = 65
+  - B = 66
+  - C = 67
+
+### UTF-8 (Unicode Transformation Format)
+- Introduced **later** to support **all languages in the world**
+- Supports emojis, Arabic, Hindi, Chinese, etc.
+- **UTF-8 is the standard** used on the modern web
+
+```html
+<!-- Always declare charset in your HTML head -->
+<meta charset="UTF-8">
+```
+
+---
+
+## Meta Elements
+
+Meta elements go inside `<head>` and give **information about the webpage** to the browser and search engines. They are **not visible** on the page but are used by browsers and SEO.
+
+> Meta = data about data (information about information)
+
+```html
+<head>
+
+  <!-- Character set — always first -->
+  <meta charset="UTF-8">
+
+  <!-- Viewport — makes page responsive on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Keywords — tells Google what your page is about -->
+  <meta name="keywords" content="HTML, CSS, web development">
+
+  <!-- Description — shown on Google search results -->
+  <meta name="description" content="Learn HTML and CSS from scratch">
+
+</head>
+```
+
+| Meta tag | Purpose |
+|----------|---------|
+| `charset="UTF-8"` | Tells browser which character set to use |
+| `name="viewport"` | Makes page look good on mobile |
+| `name="keywords"` | SEO — keywords for search engines |
+| `name="description"` | SEO — description shown on Google |
+
+---
+
+## HTML Entities — Special Characters
+
+Some characters like `<` and `>` are used by HTML itself, so if you type them in your content, the browser gets confused.
+
+**Problem:**
+```html
+<p><HTML></p>   <!-- browser thinks <HTML> is a tag! -->
+```
+
+**Solution — use HTML entities:**
+```html
+<p>&lt;HTML&gt;</p>   <!-- displays as: <HTML> -->
+```
+
+### Common entities:
+
+| What you want | Entity code | Displays as |
+|---------------|-------------|-------------|
+| Less than `<` | `&lt;` | < |
+| Greater than `>` | `&gt;` | > |
+| Ampersand `&` | `&amp;` | & |
+| Non-breaking space | `&nbsp;` | (space) |
+| Copyright `©` | `&copy;` | © |
+| Registered `®` | `&reg;` | ® |
+| Em dash `—` | `&mdash;` | — |
+
+### Syntax pattern:
+```
+&(entity name);
+ |              |
+ starts        always ends
+ with &        with semicolon ;
+```
+
+### Example:
+```html
+<p>Use &lt;p&gt; tag to define paragraphs in HTML</p>
+<!-- Shows: Use <p> tag to define paragraphs in HTML -->
+
+<p>Copyright &copy; 2026 My Website</p>
+<!-- Shows: Copyright © 2026 My Website -->
+```
