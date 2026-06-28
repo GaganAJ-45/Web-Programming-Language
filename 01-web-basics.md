@@ -115,3 +115,42 @@ HTML Document
  Rendered Page
  (what you see)
 ```
+
+---
+
+## DOM — What it can do
+
+The DOM (Document Object Model) is powerful because JavaScript can use it to:
+
+- **Provide interactivity** to the page
+- **Add elements** dynamically (e.g. add a new comment to a list)
+- **Remove elements** (e.g. delete a card)
+- **Access any HTML element** and change it
+- **Form validation** — check if inputs are filled correctly before submitting
+- **Respond to events** — button clicks, key presses, mouse hover
+
+```
+HTML Page
+   |
+   ▼
+Browser builds DOM (tree of all elements)
+   |
+   ▼
+JavaScript can now READ and CHANGE any element
+   |
+   ▼
+Page updates without reloading
+```
+
+### Example of what DOM can do:
+```javascript
+// Change text of an element
+document.getElementById("title").innerText = "New Title";
+
+// Add a class
+document.getElementById("box").classList.add("highlight");
+
+// Remove an element
+document.getElementById("old-item").remove();
+```
+> You'll learn this when you get to JavaScript — for now just know the DOM is what makes pages interactive.
