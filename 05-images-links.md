@@ -245,7 +245,7 @@ img {
   object-fit: cover;   /* fills the box, crops if needed */
 }
 ```
-
+ 
 | Value | What it does |
 |-------|-------------|
 | `cover` | Fills the box, may crop edges — most used |
