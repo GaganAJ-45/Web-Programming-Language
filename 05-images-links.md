@@ -184,3 +184,87 @@ Wrap an `<img>` inside an `<a>` tag:
   </body>
 </html>
 ```
+
+---
+
+## Advanced Anchor Features
+
+### mailto: link — opens email app
+```html
+<a href="mailto:aj@gmail.com">Email Me</a>
+```
+- This is called a **hyperlink** — we can call links by this name overall
+- Clicking it opens the user's default email app
+
+### Download link — downloads a file
+```html
+<a href="file.pdf" download>Download PDF</a>
+
+<!-- Download an image -->
+<a href="photo.jpg" download>Download Image</a>
+```
+
+### Link to a section on same page using `#`
+```html
+<!-- Navigation link -->
+<a href="#about">Go to About section</a>
+
+<!-- Target section (must match the id) -->
+<h2 id="about">About Me</h2>
+```
+- The `#` targets the **ID** of an element on the same page
+- You can also use `#` as a placeholder: `<a href="#">Click</a>` goes nowhere
+
+### All anchor attributes together
+```html
+<a 
+  href="https://google.com"   
+  target="_blank"              
+  download                     
+>
+  Link text
+</a>
+```
+
+| Attribute | Purpose |
+|-----------|---------|
+| `href` | Where the link goes (URL / relative / `#id` / `mailto:`) |
+| `target="_blank"` | Opens in new tab |
+| `download` | Downloads the file instead of opening it |
+
+---
+
+## object-fit — CSS for Images
+
+Used when you want an image to fill a box without stretching:
+
+```css
+img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;   /* fills the box, crops if needed */
+}
+```
+
+| Value | What it does |
+|-------|-------------|
+| `cover` | Fills the box, may crop edges — most used |
+| `contain` | Fits whole image inside box, may leave gaps |
+| `fill` | Stretches image to fill — looks bad usually |
+| `none` | Keeps original size |
+
+```css
+/* Common use — profile pictures, card images */
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+```
