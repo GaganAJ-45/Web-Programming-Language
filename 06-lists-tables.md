@@ -4,7 +4,7 @@
 
 There are 2 types of lists in HTML.
 
----
+-----
 
 ## 1. Unordered List — `<ul>`
 
