@@ -15,6 +15,7 @@ Shows items with **bullet points** (no numbering):
 <li>HTML</li>
 <li>CSS</li>
 <li>Javascript</li>
+</ul>
 
 ```
 
