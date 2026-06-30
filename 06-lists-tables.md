@@ -12,10 +12,10 @@ Shows items with **bullet points** (no numbering):
 
 ```html
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+
 ```
 
 **Output:**
