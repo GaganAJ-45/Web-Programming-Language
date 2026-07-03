@@ -89,10 +89,10 @@ tag             tag
      1 ELEMENT
 ```      
 So:
-
+```
 <h1> → this is just a tag
 <h1>Hello World</h1> → this is an element
-
+```
 ## Headings
 
 There are 6 levels of headings — `<h1>` is the biggest, `<h6>` is the smallest:
