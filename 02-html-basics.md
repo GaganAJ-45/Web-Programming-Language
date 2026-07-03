@@ -47,9 +47,11 @@
 ```
 ### TAG
 - A tag is the actual code you write with angle brackets < >.
-1. html<h1>    ← opening tag
-2. </h1>   ← closing tag
-3. <br>    ← self-closing tag (no closing needed)
+```
+html<h1>    ← opening tag
+</h1>   ← closing tag
+<br>    ← self-closing tag (no closing needed)
+```
 Tags are just the syntax — the way you write things. Tags themselves don't do anything alone — they need to wrap content.
 
 ### What each tag does:
