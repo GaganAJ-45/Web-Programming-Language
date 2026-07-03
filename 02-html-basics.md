@@ -93,6 +93,17 @@ So:
 <h1> → this is just a tag
 <h1>Hello World</h1> → this is an element
 ```
+### Nested elements
+```html
+<p>I am learning <strong>HTML</strong> today</p>
+
+<!-- Here we have:
+  - 1 <p> element
+  - 1 <strong> element INSIDE the <p> element
+  - <strong> is called a CHILD of <p>
+  - <p> is called the PARENT of <strong>
+-->
+```
 ## Headings
 
 There are 6 levels of headings — `<h1>` is the biggest, `<h6>` is the smallest:
