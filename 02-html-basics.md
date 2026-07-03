@@ -45,6 +45,12 @@
 
 </html>
 ```
+### TAG
+- A tag is the actual code you write with angle brackets < >.
+1. html<h1>    ← opening tag
+2. </h1>   ← closing tag
+3. <br>    ← self-closing tag (no closing needed)
+Tags are just the syntax — the way you write things. Tags themselves don't do anything alone — they need to wrap content.
 
 ### What each tag does:
 
@@ -69,6 +75,21 @@ opening tag    closing tag
 ```
 
 ---
+
+### Elements
+An element is the complete thing — opening tag + content + closing tag together.
+```HTML
+html<h1>Hello World</h1>
+ ↑                ↑
+tag             tag
+ 
+└─────────────────┘
+     1 ELEMENT
+```      
+So:
+
+<h1> → this is just a tag
+<h1>Hello World</h1> → this is an element
 
 ## Headings
 
