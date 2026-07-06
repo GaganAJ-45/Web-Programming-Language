@@ -79,6 +79,7 @@ opening tag    closing tag
 ---
 
 ### Elements
+HTML elements is the individual component in the html document that defines the stucture and content of the web page. 
 An element is the complete thing — opening tag + content + closing tag together.
 ```HTML
 html<h1>Hello World</h1>
@@ -93,8 +94,73 @@ So:
 <h1> → this is just a tag
 <h1>Hello World</h1> → this is an element
 ```
-### Nested elements
+
+---
+
+## Structure vs Layout Classification
+
+HTML elements can be categorized into two ways — by how they **display on the page (Layout)** or by how they are **structured in the code (Tags)**.
+
+---
+
+### 1. Classification by Visual Layout (CSS Display)
+
+Browsers categorize elements based on how they sit alongside other content:
+
+| Element Type | Description | Key Characteristics | Examples |
+|---|---|---|---|
+| **Block-level Elements** | Always start on a new line and take up the full horizontal width available | Can contain both block and inline elements | `<div>` `<p>` `<h1>`–`<h6>` `<ul>` `<li>` |
+| **Inline Elements** | Do not start on a new line and only take up as much width as their content needs | Usually sit inside block-level elements | `<span>` `<a>` `<img>` `<strong>` `<em>` |
+
+#### Visual example:
 ```html
+<!-- Block elements — each starts on a new line -->
+<p>First paragraph</p>
+<p>Second paragraph</p>
+
+<!-- Inline elements — sit side by side -->
+<span>Hello</span> <span>World</span>
+```
+
+---
+
+### 2. Classification by Tag Structure
+
+Elements are also grouped by how their tags are written in the code:
+
+**Container Elements**
+- Require both an **opening AND closing tag**
+- They enclose text or other elements inside them
+
+```html
+<h1>Heading</h1>
+<p>Paragraph</p>
+<div>Content</div>
+```
+
+**Empty / Void Elements**
+- Do **NOT** have a closing tag
+- Do not contain any text or nested elements inside them
+
+```html
+<br>      <!-- line break -->
+<img src="photo.jpg" alt="photo">   <!-- image -->
+<input type="text">   <!-- form control -->
+<hr>      <!-- horizontal line -->
+<meta charset="UTF-8">   <!-- meta info -->
+<link rel="stylesheet" href="style.css">   <!-- css link -->
+```
+
+---
+
+### Quick Summary
+
+```
+BY LAYOUT          BY TAG STRUCTURE
+----------         ----------------
+Block    →         Container  →  has opening + closing tag
+Inline   →         Void       →  no closing tag, no content inside
+```
 <p>I am learning <strong>HTML</strong> today</p>
 
 <!-- Here we have:
