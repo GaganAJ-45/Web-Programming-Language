@@ -78,9 +78,9 @@
 
 ---
 
-## Links — `<a>` tag
-
-The `<a>` tag creates a **clickable link**:
+## Links — `<a>` tag (Anchor Tag)
+- Anchor tag is used to navigate the web pages from current page
+- The `<a>` tag creates a **clickable link**:
 
 ```html
 <a href="https://www.google.com">Click here to go to Google</a>
