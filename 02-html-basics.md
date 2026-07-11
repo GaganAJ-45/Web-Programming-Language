@@ -59,8 +59,6 @@ Tags are just the syntax — the way you write things. Tags themselves don't do 
 | `<title>` | Text shown on the **browser tab** |
 | `<body>` | Everything the **user sees** on the page |
 
----
-
 ## Opening & Closing Tags
 
 Most HTML tags have an **opening** and a **closing** tag:
