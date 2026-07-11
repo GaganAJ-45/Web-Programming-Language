@@ -7,8 +7,6 @@
 - HTML is **not case sensitive** — `<P>` and `<p>` both work
   - But always write in **lowercase** (modern standard)
 
----
-
 ## index.html
 - `index.html` represents the **homepage** of a website
 - When someone visits your website, the browser loads `index.html` first
