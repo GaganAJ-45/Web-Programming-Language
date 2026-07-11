@@ -12,8 +12,6 @@
 - When someone visits your website, the browser loads `index.html` first
 - Always name your main file `index.html`
 
----
-
 ## DOCTYPE Declaration
 
 ```html
