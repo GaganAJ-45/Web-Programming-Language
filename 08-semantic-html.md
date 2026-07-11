@@ -37,13 +37,13 @@ Both look the same in the browser — but the second one **makes sense** when yo
 
 | Tag | Purpose |
 |-----|---------|
-| `<header>` | Top section of page or section (logo, title) |
+| `<header>` | Top section of page or section (logo, title) or introduction part |
 | `<nav>` | Navigation links / menu |
 | `<main>` | Main content of the page (use only once) |
 | `<section>` | A group of related content |
 | `<article>` | Self-contained content (blog post, news) |
 | `<aside>` | Side content (sidebar, ads, related links) |
-| `<footer>` | Bottom of page (copyright, links) |
+| `<footer>` | Bottom of page (copyright, links) or concluded part |
 | `<figure>` | Image with caption |
 | `<figcaption>` | Caption for a figure |
 
