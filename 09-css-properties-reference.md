@@ -80,7 +80,7 @@ div {
   background-color: transparent;
 
   /* Image */
-  background-image: url('bg.jpg');
+  background-image: url(bg.jpg);
 
   /* Repeat */
   background-repeat: no-repeat;     /* don't tile the image */
