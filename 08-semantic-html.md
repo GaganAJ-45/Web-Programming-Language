@@ -4,6 +4,9 @@
 - Semantic = **meaningful**
 - Semantic tags describe **what the content is**, not just how it looks
 - Makes code more readable for developers and browsers
+- Keep your content organized
+- Better For SEO
+- It assists for screen readers
 
 ### Non-semantic (bad):
 ```html
