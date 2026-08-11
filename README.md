@@ -20,6 +20,3 @@ Personal reference notes for learning HTML & CSS from scratch.
 - VS Code
 - Live Server Extension
 - Browser (Chrome)
-
-## 📅 Started
-June 2026
