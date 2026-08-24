@@ -154,3 +154,63 @@ document.getElementById("box").classList.add("highlight");
 document.getElementById("old-item").remove();
 ```
 > You'll learn this when you get to JavaScript — for now just know the DOM is what makes pages interactive.
+
+# Static vs Dynamic Websites
+
+## What is a Static Website?
+
+A **static website** delivers the same pre-built content to every user. The files (HTML, CSS, JS) are stored on a server and served *as-is* — no processing happens on the server before the page is sent to the browser.
+
+### Characteristics
+- Content is fixed until a developer manually updates the files
+- No server-side processing or database involved
+- Faster load times due to pre-built files
+- Easier and cheaper to host (e.g., GitHub Pages, Netlify, Vercel)
+
+### Examples
+- Portfolio websites
+- Documentation pages
+- Landing pages
+
+---
+
+## What is a Dynamic Website?
+
+A **dynamic website** generates content on the fly — the server processes requests, fetches data from a database, and builds the page before sending it to the user. Different users (or the same user at different times) may see different content.
+
+### Characteristics
+- Content is generated at runtime based on user input, database records, or other logic
+- Requires a backend (server + database)
+- More complex to build and host
+- Supports user authentication, personalization, and real-time data
+
+### Examples
+- E-commerce stores (Amazon, Flipkart)
+- Social media platforms
+- Dashboards and admin panels
+
+---
+
+## Key Differences
+
+| Feature              | Static Website             | Dynamic Website                  |
+|----------------------|----------------------------|----------------------------------|
+| Content              | Fixed                      | Generated at runtime             |
+| Server-side logic    | None                       | Required (PHP, Node.js, Python…) |
+| Database             | Not required               | Required                         |
+| Load speed           | Generally faster           | Depends on server processing     |
+| Hosting cost         | Low (CDN/static hosts)     | Higher (server infrastructure)   |
+| Maintenance          | Simple                     | More complex                     |
+| Personalization      | Not possible (by default)  | Fully supported                  |
+| Examples             | Portfolios, docs, blogs    | Dashboards, e-commerce, social   |
+
+---
+
+## When to Use Which?
+
+- Use a **static website** when content doesn't change often and you want speed, simplicity, and low hosting cost.
+- Use a **dynamic website** when you need user logins, database-driven content, or real-time updates.
+
+> **Note:** Modern tools like **Next.js** blur this line — they support *Static Site Generation (SSG)* and *Server-Side Rendering (SSR)*, letting you combine the benefits of both approaches.
+
+---
